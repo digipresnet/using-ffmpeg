@@ -9,3 +9,6 @@ docker-compose build
 jupyter-repo2docker --image-name using-ffmpeg_notes .
 ```
 
+https://amiaopensource.github.io/ffmprovisr/#mandelbrot
+
+

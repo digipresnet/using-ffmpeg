@@ -24,6 +24,9 @@ RUN adduser --disabled-password \
 WORKDIR ${HOME}
 USER ${USER}
 
+# Copy in notebooks:
+COPY *.ipynb .
+
 # Drop the parent image setup for entrypoint:
 ENTRYPOINT []
 
