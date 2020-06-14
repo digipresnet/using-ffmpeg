@@ -1,0 +1,16 @@
+version: "3.2"
+
+services:
+
+  notes:
+    command: bash
+    build:
+      context: .
+      args:
+        http_proxy: ${HTTP_PROXY}
+        https_proxy: ${HTTPS_PROXY}
+        NB_USER: anj
+        NB_UID: 1001
+    volumes:
+      - .:/host
+
